@@ -30,8 +30,8 @@ mv -f .tmp cfg.data
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1,%{_datadir}/reed}
+
 install reed breed wrap $RPM_BUILD_ROOT%{_bindir}
 install *.1 $RPM_BUILD_ROOT%{_mandir}/man1
 
