@@ -1,23 +1,23 @@
 Summary:	An autoscrolling pager for UNIX systems
-Summary(pl):	Skroluj±cy siê automatycznie pager dla systemów UNIX
+Summary(pl):	Przewijaj±cy siê automatycznie program stronicuj±cy dla systemów UNIX
 Name:		reed
 Version:	5.4
 Release:	1
 License:	GPL
 Group:		Applications/Text
-Source0:	http://www.sacredchao.net/software/%{name}/%{name}-%{version}.tar.gz
+Source0:	http://www.sacredchao.net/software/reed/%{name}-%{version}.tar.gz
 # Source0-md5:	22c8d80dd6a81ecc6ef60662f2d1840c
 Patch0:		%{name}-makefile.patch
 BuildRequires:	ncurses-devel
 Requires:	perl
-URL:		http://www.sacredchao.net/software/reed
+URL:		http://www.sacredchao.net/software/reed/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 An autoscrolling pager for UNIX systems.
 
 %description -l pl
-Skroluj±cy siê automatycznie pager dla systemów UNIX.
+Przewijaj±cy siê automatycznie program stronicuj±cy dla systemów UNIX.
 
 %prep
 %setup  -q
