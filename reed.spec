@@ -1,16 +1,16 @@
-Summary:        An autoscrolling pager for UNIX systems
-Summary(pl):    Skroluj±cy siê automatycznie pager dla systemów UNIX
-Name:           reed
-Version:        5.3
-Release:        1
-License:        GPL
-Group:          Applications/Text
-Source0:        http://www.sacredchao.net/software/%{name}/%{name}-%{version}.tar.gz
-Patch0:         %{name}-makefile.patch
-BuildRequires:  ncurses-devel
-Requires:       perl
-URL:            http://www.sacredchao.net/software/reed
-BuildRoot:      %{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+Summary:	An autoscrolling pager for UNIX systems
+Summary(pl):	Skroluj±cy siê automatycznie pager dla systemów UNIX
+Name:		reed
+Version:	5.3
+Release:	1
+License:	GPL
+Group:		Applications/Text
+Source0:	http://www.sacredchao.net/software/%{name}/%{name}-%{version}.tar.gz
+Patch0:		%{name}-makefile.patch
+BuildRequires:	ncurses-devel
+Requires:	perl
+URL:		http://www.sacredchao.net/software/reed
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 An autoscrolling pager for UNIX systems.
@@ -26,7 +26,7 @@ Skroluj±cy siê automatycznie pager dla systemów UNIX.
 sed -e "s|curses\.h|ncurses\/curses.h|" cfg.data > .tmp
 mv -f .tmp cfg.data
 ./configures
-%{__make} CC=%{__cc} CFLAGS="-I/usr/include/ncurses %{rpmcflags}"
+%{__make} CC=%{__cc} CFLAGS="-I%{_includedir}/ncurses %{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
