@@ -26,8 +26,11 @@ Przewijaj±cy siê automatycznie program stronicuj±cy dla systemów UNIX.
 %build
 sed -e "s|curses\.h|ncurses\/curses.h|" cfg.data > .tmp
 mv -f .tmp cfg.data
-./configures --libdir=%{_libdir}
-%{__make} CC=%{__cc} CFLAGS="-I%{_includedir}/ncurses %{rpmcflags}"
+./configures \
+	--libdir=%{_libdir}
+%{__make} \
+	CC="%{__cc}" \
+	CFLAGS="-I%{_includedir}/ncurses %{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
