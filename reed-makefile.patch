@@ -1,0 +1,13 @@
+--- reed-5.1/Makefile.in~	Mon Jan 21 21:30:20 2002
++++ reed-5.1/Makefile.in	Sat Feb 23 02:09:47 2002
+@@ -1,8 +1,8 @@
+ all:
+-	$(CC) -O2 -o reed reed.c filemode.c -lcurses
++	$(CC) $(CFLAGS) -o reed reed.c filemode.c -lncurses
+ 
+ debug:
+-	$(CC) -o reed reed.c filemode.c -lcurses -Wall -g
++	$(CC) $(CFLAGS) -o reed reed.c filemode.c -lncurses -Wall -g
+ 
+ install:
+ 	install -d $(DESTDIR)PREFIX/bin
