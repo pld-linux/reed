@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Applications/Text
 Source0:	http://www.sacredchao.net/software/%{name}/%{name}-%{version}.tar.gz
+# Source0-md5:	4ecc522355009463b598bb90e728817f
 Patch0:		%{name}-makefile.patch
 BuildRequires:	ncurses-devel
 Requires:	perl
