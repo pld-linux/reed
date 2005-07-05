@@ -8,9 +8,9 @@ Group:		Applications/Text
 Source0:	http://www.sacredchao.net/software/reed/%{name}-%{version}.tar.gz
 # Source0-md5:	22c8d80dd6a81ecc6ef60662f2d1840c
 Patch0:		%{name}-makefile.patch
-BuildRequires:	ncurses-devel
-Requires:	perl
 URL:		http://www.sacredchao.net/software/reed/
+BuildRequires:	ncurses-devel
+BuildRequires:	perl-base
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
