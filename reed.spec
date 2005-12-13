@@ -30,7 +30,7 @@ mv -f .tmp cfg.data
 	--libdir=%{_libdir}
 %{__make} \
 	CC="%{__cc}" \
-	CFLAGS="-I%{_includedir}/ncurses %{rpmcflags}"
+	CFLAGS="-I/usr/include/ncurses %{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
