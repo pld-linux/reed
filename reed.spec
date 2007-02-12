@@ -1,5 +1,5 @@
 Summary:	An autoscrolling pager for UNIX systems
-Summary(pl):	Przewijaj±cy siê automatycznie program stronicuj±cy dla systemów UNIX
+Summary(pl.UTF-8):   PrzewijajÄ…cy siÄ™ automatycznie program stronicujÄ…cy dla systemÃ³w UNIX
 Name:		reed
 Version:	5.4
 Release:	1
@@ -16,8 +16,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 An autoscrolling pager for UNIX systems.
 
-%description -l pl
-Przewijaj±cy siê automatycznie program stronicuj±cy dla systemów UNIX.
+%description -l pl.UTF-8
+PrzewijajÄ…cy siÄ™ automatycznie program stronicujÄ…cy dla systemÃ³w UNIX.
 
 %prep
 %setup  -q
