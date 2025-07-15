@@ -21,7 +21,7 @@ Przewijający się automatycznie program stronicujący dla systemów UNIX.
 
 %prep
 %setup  -q
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 sed -e "s|curses\.h|ncurses\/curses.h|" cfg.data > .tmp
